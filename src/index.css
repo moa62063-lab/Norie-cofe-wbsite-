@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+  
+  body {
+    background-color: #FAF7F2;
+    color: #2A1D15;
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  ::selection {
+    background-color: #E2D7C7;
+    color: #1C130D;
+  }
+}
+
+/* Custom delicate borders & shadows matching Figma */
+.archival-card {
+  box-shadow: 0 16px 40px -12px rgba(42, 29, 21, 0.08), 0 2px 6px -1px rgba(42, 29, 21, 0.03);
+}
+
+.subtle-ring {
+  box-shadow: 0 0 0 1px rgba(42, 29, 21, 0.08);
+}
